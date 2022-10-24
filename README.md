@@ -2,6 +2,7 @@
 
 ## Prerequisites
 We are running 0.26.2 version of gym library, which is currently the newest one. To install it, please run:
+
 *pip install gym[all]*
 
 ## Solving tasks in OpenAI Gym
@@ -24,16 +25,16 @@ The overall progress of the project should be an iterative exploration of differ
 - [x] 5. Implement a random generator of rule arguments. The generated arguments are going to be passed to the cellular automaton to define its rule
 - [x] 6. The initial state of the cellular automaton is defined by the environment observations as binary numbers. Come up with the input arrangement of these binary numbers into the CA
 - [x] 7. Select and implement a method to determine the action of the cart. One suggestion is through majority voting system. It determines the action using the cells’ states with larger amount. For example, if there are more cells with state zero than with state one, then the cart moves left, otherwise the cart moves right
-- [ ] 8. Come up with a fitness function that tracks the performance of the cart during the entire environment simulation. You can use the rewards and environment observations that the function “step” returns
-- [ ] 9. Execution of the solution search:
-    - [ ] 1. Generate random arguments to define the CA’s rule
-    - [ ] 2. Make the first observation of a fresh (reset) environment. Transfer it into the CA as its initial state. It must follow the predefined input arrangement
-    - [ ] 3. Execute a chosen number of time steps
-    - [ ] 4. The current state of the CA is used to define its action according to a selected method
-    - [ ] 5. Update the state of the CA according to the new environment observation after the cart’s action
-    - [ ] 6. Go to step 9.3 again until the environment simulation is done
-    - [ ] 7. When simulation is done, apply the fitness function to determine the controller’s fitness score. Save the score and the CA’s rule applied
-    - [ ] 8. Go to step 9.1. again until the stop condition of your search is reached
-- [ ] 10. After the solution search, rank your rules by the best fitness scores
-- [ ] 11. The previous steps perform a random search. Then, it can be improved to an evolutionary algorithm
+- [x] 8. Come up with a fitness function that tracks the performance of the cart during the entire environment simulation. You can use the rewards and environment observations that the function “step” returns
+- [x] 9. Execution of the solution search:
+    - [x] 1. Generate random arguments to define the CA’s rule
+    - [x] 2. Make the first observation of a fresh (reset) environment. Transfer it into the CA as its initial state. It must follow the predefined input arrangement
+    - [x] 3. Execute a chosen number of time steps
+    - [x] 4. The current state of the CA is used to define its action according to a selected method
+    - [x] 5. Update the state of the CA according to the new environment observation after the cart’s action
+    - [x] 6. Go to step 9.3 again until the environment simulation is done
+    - [x] 7. When simulation is done, apply the fitness function to determine the controller’s fitness score. Save the score and the CA’s rule applied
+    - [x] 8. Go to step 9.1. again until the stop condition of your search is reached
+- [x] 10. After the solution search, rank your rules by the best fitness scores
+- [x] 11. The previous steps perform a random search. Then, it can be improved to an evolutionary algorithm
 - [ ] 12. Expand your CA or to a network model (a simple neural network model). Then, evolve its parameters to improve the controller.
